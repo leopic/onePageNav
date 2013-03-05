@@ -83,17 +83,18 @@ $.widget('bc.onePageNav', {
             var $el = $(this),
                 idx = _.indexOf(self.positionName, $el.attr('href'));
 
+            // default behavior is jumpy
+            event.preventDefault();
             self._recalculatePositions();
             self._trigger('beforeScroll', event);
 
-            $('body').animate({ scrollTop: self.positionCol[idx] - 20}, 600, function() {
+            $('body').animate({ scrollTop: self.positionCol[idx]}, 600, function() {
                 $menu.find($el).parent().siblings().removeClass(options.activeClass).end().addClass(options.activeClass);
+                if (options.useHashes) {
+                    window.location.hash = self.positionName[idx];
+                }
                 self._trigger('afterScroll', event);
             });
-
-            if (!options.useHashes){
-                event.preventDefault();
-            }
         });
     }, _updOnCurrentPos: function () {
         var self = this,
@@ -109,10 +110,8 @@ $.widget('bc.onePageNav', {
         for (i = 0; i < self.positionCol.length; i++) {
             floor = self.positionCol[i] - options.threshold;
             ceil = self.positionCol[i] + options.threshold;
-            console.log(floor + ' | ' + currentPosition + ' | ' + ceil);
 
             if (floor < currentPosition && currentPosition < ceil) {
-                console.log(floor + ' | ' + currentPosition + ' | ' + ceil);
                 $menu.find('a[href="' + self.positionName[i] + '"]').parent().addClass(options.activeClass)
                      .siblings().removeClass(options.activeClass);
                 break;
