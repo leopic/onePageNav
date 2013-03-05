@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Scrolling demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        html {
+            font-family: sans-serif; padding: 0 0 1000px;
+        }
+        .ui-onepagenav-anchor {
+            border: 2px solid #ccc; border-radius: 3px; color: #444;  margin: 20px 60px 20px 220px; padding: 0 10px;
+        }
+        .ui-onepagenav-anchor h1 {
+            color: #333; letter-spacing: -3px;
+        }
+        .ui-onepagenav-menu {
+            position: fixed; top: 20px; left: 20px; border: 2px solid #ccc; border-radius: 3px; padding: 0  30px 10px 30px;
+            display: none;
+        }
+        .ui-onepagenav-menu .active {
+            background: #000;
+        }
+        .ui-onepagenav-menu .active a {
+            color: #fff;
+        }
+        .ui-onepagenav-menu li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="ui-onepagenav-anchor" id="uno">
+        <h1>uno</h1>
+        <img src="http://upload.wikimedia.org/wikipedia/en/2/2e/NOFX_-_The_Decline_cover.jpg" />
+        <p>Consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p>Dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p>laoreet ut pellentesque nec, vulputate sollicitudin augue.</p>
+    </div>
+    <div class="ui-onepagenav-anchor" id="dos">
+        <h1>dos</h1>
+        <img src="http://www.fantasticweapon.com/wp-content/uploads/2009/08/nofx-coaster-album-cover.jpeg"/>
+        <p> tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu, consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p> tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu, consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p> tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu, consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p> tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu, consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p> tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu, consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p> quis interdum risus nibh eu justo. In mauris lacus, ultricies a ullamcorper sit amet, luctus sit amet velit. Praesent suscipit diam vitae ipsum consequat in euismod metus tempor. In mollis pharetra ligula. Fusce iaculis nisi non tellus porttitor scelerisque. Vivamus ipsum nulla, laoreet ut pellentesque nec, vulputate sollicitudin augue.</p>
+    </div>
+    <div class="ui-onepagenav-anchor" id="tres" data-onepagenav-name="numero tres">
+        <h1>tres</h1>
+        <img src="http://3.bp.blogspot.com/-Duw6n-oVvcc/TsHXAiENhXI/AAAAAAAAAmE/kfBty1SdTis/s1600/wolveswolvesclothing.jpg"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisi nulla, tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu, consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisi nulla, tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu, consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p>Donec quis nunc neque, viverra congue nulla. Mauris non lectus eu diam volutpat egestas ac ac magna. Praesent sollicitudin fringilla fermentum. In varius interdum dictum. Donec ut orci in urna convallis vestibulum. Donec porta, libero quis rutrum faucibus, tortor neque accumsan nisi, quis interdum risus nibh eu justo. In mauris lacus, ultricies a ullamcorper sit amet, luctus sit amet velit. Praesent suscipit diam vitae ipsum consequat in euismod metus tempor. In mollis pharetra ligula. Fusce iaculis nisi non tellus porttitor scelerisque. Vivamus ipsum nulla, laoreet ut pellentesque nec, vulputate sollicitudin augue.</p>
+        <p>Donec quis nunc neque, viverra congue nulla. Mauris non lectus eu diam volutpat egestas ac ac magna. Praesent sollicitudin fringilla fermentum. In varius interdum dictum. Donec ut orci in urna convallis vestibulum. Donec porta, libero quis rutrum faucibus, tortor neque accumsan nisi, quis interdum risus nibh eu justo. In mauris lacus, ultricies a ullamcorper sit amet, luctus sit amet velit. Praesent suscipit diam vitae ipsum consequat in euismod metus tempor. In mollis pharetra ligula. Fusce iaculis nisi non tellus porttitor scelerisque. Vivamus ipsum nulla, laoreet ut pellentesque nec, vulputate sollicitudin augue.</p>
+    </div>
+    <div class="ui-onepagenav-anchor" id="cuatro" data-onepagenav-name="four horsemen">
+        <h1>cuatro</h1>
+        <img src="http://c438342.r42.cf2.rackcdn.com/wp-content/uploads/2011/06/nofx4.jpg"/>
+        <p> tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu, consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p>Donec quis nunc neque, viverra congue nulla. Mauris non lectus eu diam volutpat egestas ac ac magna. Praesent sollicitudin fringilla fermentum. In varius interdum dictum. Donec ut orci in urna convallis vestibulum. Donec porta, libero quis rutrum faucibus, tortor neque accumsan nisi, quis interdum risus nibh eu justo. In mauris lacus, ultricies a ullamcorper sit amet, luctus sit amet velit. Praesent suscipit diam vitae ipsum consequat in euismod metus tempor. In mollis pharetra ligula. Fusce iaculis nisi non tellus porttitor scelerisque. Vivamus ipsum nulla, laoreet ut pellentesque nec, vulputate sollicitudin augue.</p>
+    </div>
+    <div class="ui-onepagenav-anchor" id="cinco">
+        <h1>cinco</h1>
+        <img src="http://d3na4zxidw1hr4.cloudfront.net/site_media/uploads/images/review/n/nofx/nofx_jpg_300x300_crop-smart_q85.jpg"/>
+        <p> consectetur adipiscing elit. Nulla nisi nulla, tristique eu molestie eu, lobortis et sem. Pellentesque eu purus leo. Mauris a libero sapien. Mauris adipiscing vehicula ante, nec faucibus leo aliquam quis. In ac sem ut sem sollicitudin mattis. Vestibulum rhoncus consequat viverra. In hac habitasse platea dictumst. Integer et quam sit amet purus molestie ullamcorper at eget nulla. Maecenas tortor arcu,lllllllllllll consectetur nec ultricies vitae, gravida in magna. Proin sed libero leo. Nulla quam neque, dignissim vitae imperdiet a, consequat sed nisl. Curabitur consectetur, erat at mattis commodo, neque ante venenatis leo, consectetur bibendum lorem leo pharetra quam. Integer tincidunt dapibus justo id interdum.</p>
+        <p>Donec quis nunc neque, viverra congue nulla. Mauris non lectus eu diam volutpat egestas ac ac magna. Praesent sollicitudin fringilla fermentum. In varius interdum dictum. Donec ut orci in urna convallis vestibulum. Donec porta, libero quis rutrum faucibus, tortor neque accumsan nisi, quis interdum risus nibh eu justo. In mauris lacus, ultricies a ullamcorper sit amet, luctus sit amet velit. Praesent suscipit diam vitae ipsum consequat in euismod metus tempor. In mollis pharetra ligula. Fusce iaculis nisi non tellus porttitor scelerisque. Vivamus ipsum nulla, laoreet ut pellentesque nec, vulputate sollicitudin augue.</p>
+    </div>
+    <div id="myMenu">
+        <h3>custom element</h3>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="underscore-min.js"></script>
+<script src="apgnv.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (ev) {
+        $('.wrapper').onePageNav({
+            beforeScroll: function(ev) {
+                console.log('before');
+            },
+            afterScroll: function(ev) {
+                console.log('after');
+            },
+            menuElement: '#myMenu'
+        });
+    })
+</script>
+</body>
+</html>
+
+
