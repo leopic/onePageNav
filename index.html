@@ -20,6 +20,9 @@
             position: fixed; top: 20px; left: 20px; border: 2px solid #ccc; border-radius: 3px; padding: 0  30px 10px 30px;
             display: none;
         }
+        .ui-onepagenav-menu ul {
+            padding: 0;
+        }
         .ui-onepagenav-menu .active {
             background: #000;
         }
@@ -88,6 +91,7 @@
             afterScroll: function(ev) {
                 console.log('after');
             },
+            scrollSpeed: 'slow',
             menuElement: '#myMenu'
         });
     })

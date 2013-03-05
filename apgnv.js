@@ -3,8 +3,8 @@ $.widget('bc.onePageNav', {
         threshold: 500,
         baseClassName: 'ui-onepagenav',
         activeClass: 'active',
-        useHashes: true,
-        menuElement: ''
+        menuElement: '',
+        scrollSpeed: 600
     },
     _create: function () {
         var self = this,
@@ -88,11 +88,8 @@ $.widget('bc.onePageNav', {
             self._recalculatePositions();
             self._trigger('beforeScroll', event);
 
-            $('body').animate({ scrollTop: self.positionCol[idx]}, 600, function() {
+            $('body').animate({ scrollTop: self.positionCol[idx]}, options.scrollSpeed, function() {
                 $menu.find($el).parent().siblings().removeClass(options.activeClass).end().addClass(options.activeClass);
-                if (options.useHashes) {
-                    window.location.hash = self.positionName[idx];
-                }
                 self._trigger('afterScroll', event);
             });
         });
